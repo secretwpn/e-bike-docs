@@ -27,7 +27,7 @@ Has a Mind Motion MS32SPIN 25PF microcontroller inside
 
 [Datasheet](https://www.mindmotion.com.cn/download/products/DS_MM32SPIN2x_p_EN.pdf)
 
-Uses SWD data interface, therefore SWIM support is not present and you can't flash it via ST-LINK
+**Uses SWD data interface, therefore SWIM support is not present and you can't flash it via ST-LINK**
 
 # Data interfaces
 
