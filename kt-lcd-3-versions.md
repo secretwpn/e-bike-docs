@@ -27,14 +27,13 @@ Has a Mind Motion MM32SPIN 25PF microcontroller inside
 
 [Datasheet](https://www.mindmotion.com.cn/download/products/DS_MM32SPIN2x_p_EN.pdf)
 
-**Uses SWD data interface, therefore SWIM support is not present and you can't flash it via ST-LINK**
+**Uses SWD data interface, therefore SWIM support is not present and you can't flash as per instructions mentioned above**
 
-# Data interfaces
+# Conclusion
 
-## SWIM
+I know nothing about microcontrollers, so probably stating the obvious, but it looks like existing OSF builds are compiled for STM8, not STM32/MM32. 
+So even if you get the flashing setup right - you still need firmware binaries built specifically for MM32.
 
-The SWIM is a single wire interface based on asynchronous, high sink (8 mA), open-drain, bidirectional communication.
-
-## SWD
-
-SWD, also known as Serial Wire Debug is a 2-pin interface (SWDIO/SWCLK) of which it's also an alternative JTAG interface that has the same JTAG protocol. SWD uses an ARM CPU standard bi-directional wire protocol, defined in the ARM Debug programmer.
+If I understand correctly this more or less rules out possibilities of flashing KT-LCD3-M1 at this point. 
+Annoyingly it is not possible to tell by the looks / markings on the outside of the display, which revision it is (I have one marked _KT-LCD3 V3.0 7J 24/36/48_ with KT-LCD3-E board 
+and another one _KT-LCD3 V3.0 1K 24/36/48_ with KT-LCD3-M1
