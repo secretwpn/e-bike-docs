@@ -21,7 +21,7 @@ Uses SWIM interface, PD1 Pin is assigned to SWIM data interface
 
 ## KT-LCD3-M1
 
-Has a Mind Motion MS32SPIN 25PF microcontroller inside
+Has a Mind Motion MM32SPIN 25PF microcontroller inside
 
 [Description](https://www.mindmotion.com.cn/en/products/mm32mcu/mm32spin/mm32spin_specific_mcu/mm32spin2x/)
 
