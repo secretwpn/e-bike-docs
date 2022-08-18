@@ -1,5 +1,8 @@
+# Bafang 850C Open Source Firmware installation guide
 
-# Bafang 850C
+Note: keep in mind, that unlike combinations like TSDZ2 + VLCD5/VLCD6/XH-18 where you only flash the motor, with 850C you need to flash both: motor and display, and they need matching firmware versions.
+
+You can get the firmware for both, display and motor here [Color LCD firmware](https://github.com/OpenSourceEBike/Color_LCD/releases)
 
 ## Display disassembly
 
