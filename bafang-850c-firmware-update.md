@@ -47,6 +47,10 @@ I will try creating a more thorough guide for this, but in short the steps are a
 > 
 > At this point I am not sure what bootloader is, but if I understand correctly when flashing via ST-LINK you need a regular, non-bootloader version
 - flash the firmware (should take about 10-20 seconds, you'll see the progress bar as it goes)
+- disconnect the display from computer and connect it to the bike
+- flash the motor with matching firmware
+- turn on the display (to enter the config menu you need to turn the display on holding all three buttons (power, up, down) for a second or two, and then let go)
+- configure your setup as per this [850C configuration guide](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki/Features-and-configurations-on-display), **DON'T SKIP THIS STEP**
 - you're done
 
 If at some point you see complaints about read or write failure - just tinker with erasing the chip and setting the option bytes to remove write protection, you'll get there.
