@@ -39,7 +39,7 @@ I will try creating a more thorough guide for this, but in short the steps are a
 - connect your display to ST-LINK V2 USB dongle
 > Note: you don't need any voltage boosters, nor connecting the bike battery to the display, just plain st-link to display SWD pins as described in [Bafang 850C Display firmware update](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki/Flash-the-firmware-on-850C-using-SWD)
 >
-> Also you don't need to turn the display on in order to flash it (and you can't do this anyway with described wiring arrangement) so you just flas it and then go ahead and connect to the bike as usual
+> Also you don't need to turn the display on in order to flash it (and you can't do this anyway with described wiring arrangement) so you just flash it and then go ahead and connect to the bike as usual
 - plug the dongle into computer
 - in ST-LINK Utility go to settings and make sure your dongle was recognized (it will display the serial number and allow changing some settings; I have left all settings stock)
 - click "connect" in the top toolbar
@@ -54,6 +54,8 @@ I will try creating a more thorough guide for this, but in short the steps are a
 - flash the motor with matching firmware
 - turn on the display (to enter the config menu you need to turn the display on holding all three buttons (power, up, down) for a second or two, and then let go)
 - configure your setup as per this [850C configuration guide](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki/Features-and-configurations-on-display), **DON'T SKIP THIS STEP**
+> Configuration is quite involved and technical. 
+> I could not make my setup work yet, have to go in again and make sure all the battery settings are correct, as default values won't do it for my 48V setup
 - you're done
 
 If at some point you see complaints about read or write failure - just tinker with erasing the chip and setting the option bytes to remove write protection, you'll get there.
