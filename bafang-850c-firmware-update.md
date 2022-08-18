@@ -24,11 +24,14 @@ Instead of using header pins you can use a short length of some interface cable.
 ## Firmware update
 According to this link [Bafang 850C Display firmware update](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki/Flash-the-firmware-on-850C-using-SWD) you need to use [STM32 ST-LINK Utility](https://www.st.com/en/development-tools/stsw-link004.html) to flash the display, but there are some issues:
 - it is marked obsolete, replaced with [STM32CubeProg](https://www.st.com/en/development-tools/stm32cubeprog.html)
-- if you install the ST-LINK Utility it might not start. 
-For me it refused to start on one laptop (Win 11) complaining about some missing vcredist related dlls. 
-Installing vcredist and rebooting, reinstalling the tool - nothing helped, could not get it running. 
-But just installing it on another laptop (also Win 11) worked from the get go, no issues.
+- it does not work on every computer 
+> For me it refused to start on one laptop (Win 11) complaining about some missing vcredist related dlls.
+> Installing vcredist and rebooting, reinstalling the tool - nothing helped, could not get it running.
+>  
+> But just installing it on another laptop (also Win 11) worked from the get go, no issues.
+
 Flashing the display with STM32CubeProg went through after some tinkering, but the display did not boot afterwards. I am pretty sure this is a user error and not the software fault.
+
 Flashing with ST-LINK Utility was succesful.
 
 Also flashing instructions are not really clear, at least not for someone inexperienced with flashing microcontrollers. 
